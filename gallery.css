@@ -1,0 +1,131 @@
+html {
+    height: 100%;
+}
+
+body {
+    background: #333;
+    background-size: cover;
+}
+
+ul {
+    padding-left: 325px;
+    padding-right: 325px;
+    left: 0;
+    bottom: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+li1 {
+    padding-top: 30px;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-size: 3vw;
+    font-kerning: 5px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: italic;
+    font-weight: 200;
+    color: white;    
+    letter-spacing: 5px;   
+    text-shadow: 1px 1px black;
+}
+
+li a {
+    padding-top: 50px;
+    display: block;
+    color: rgb(192, 192, 192);
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.5vw;   
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: italic;
+    font-weight: 300;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px black;
+}
+
+li a:hover:not(.active) {
+    color: #ec4b4b;
+}
+
+.active {
+    color: #ec4b4b;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(32, 32, 32);
+    color: white;
+    text-align: center;
+    font-size: 0.8vw;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: italic;
+    font-weight: 300;
+}
+
+.head {
+    text-align: center;
+    padding-top: 25px;
+    font-size: 1.25vw;
+    font-kerning: 3px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 200;
+    color: white;    
+    letter-spacing: 2px;   
+    text-shadow: 1px 1px black;
+}
+
+li2 {
+    padding-top: 30px;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-size: 1.5vw;
+    font-kerning: 3px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+    color: white;    
+    letter-spacing: 4px;   
+    text-shadow: 1px 1px black;
+}
+
+.row {    
+    vertical-align: middle;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    align-items: center;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 6px;
+    padding-bottom: 15%;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
