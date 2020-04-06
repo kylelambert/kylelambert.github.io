@@ -3,54 +3,58 @@ html {
 }
 
 body {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: normal;
     background: #333;
     background-size: cover;
 }
 
-ul {
-    padding-left: 325px;
-    padding-right: 325px;
-    left: 0;
-    bottom: 0;
+.container-nav-main {
+    padding-top: 1vh;
+    display: grid;
+    grid-gap: 5px;
     list-style-type: none;
-    display: flex;
-    justify-content: space-between;
 }
 
-li1 {
-    padding-top: 30px;
-    padding-left: 25px;
-    padding-right: 25px;
-    font-size: 3vw;
-    font-kerning: 5px;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-style: italic;
+.container-nav-main li1 {
+    font-size: 2.5rem;
+    font-kerning: 0;
     font-weight: 200;
-    color: white;    
-    letter-spacing: 5px;   
-    text-shadow: 1px 1px black;
+    color: white;  
+    text-shadow: 0 0 black;
 }
 
-li a {
-    padding-top: 50px;
-    display: block;
+.container-nav-inner li a {
     color: rgb(192, 192, 192);
-    text-align: center;
     text-decoration: none;
-    font-size: 1.5vw;   
-    font-family: 'Source Sans Pro', sans-serif;
-    font-style: italic;
-    font-weight: 300;
-    letter-spacing: 1px;
-    text-shadow: 1px 1px black;
+    font-size: 1.25rem;  
+    font-weight: 250;
+    letter-spacing: 0;
+    text-shadow: 0 0 black;
+
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-li a:hover:not(.active) {
+.container-nav-inner li a:hover:not(.active) {
     color: #ec4b4b;
 }
 
-.active {
+.container-nav-inner .active {
     color: #ec4b4b;
+}
+
+.container-nav-inner {
+    padding-top: 0.75rem;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 10px;
+}
+
+.item-inner {
+    grid-column: span 3;
 }
 
 .footer {
@@ -61,33 +65,45 @@ li a:hover:not(.active) {
     background-color: rgb(32, 32, 32);
     color: white;
     text-align: center;
-    font-size: 0.8vw;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 0.75em;
     font-style: italic;
-    font-weight: 300;
+    font-weight: 0;
 }
 
-.head {
-    text-align: center;
-    padding-top: 25px;
-    font-size: 1.25vw;
-    font-kerning: 3px;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 200;
-    color: white;    
-    letter-spacing: 2px;   
-    text-shadow: 1px 1px black;
+@media screen and (min-width: 600px) {
+
+    body {
+        width: 98%;
+        margin: 0 auto;
+    }
+
+    .container-nav-inner {
+        grid-auto-flow: column;
+    }
+
+    .item-inner {
+        grid-column: span 1;
+    }
+
 }
 
-li2 {
-    padding-top: 30px;
-    padding-left: 25px;
-    padding-right: 25px;
-    font-size: 1.5vw;
-    font-kerning: 3px;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 300;
-    color: white;    
-    letter-spacing: 4px;   
-    text-shadow: 1px 1px black;
+@media screen and (min-width: 900px) {
+
+    .container-nav-main {
+        grid-auto-flow: column;
+    }
+
+    .item-inner {
+        grid-column: span 1;
+    }    
+}
+
+@media screen and (max-width: 900px) {
+
+    .container-nav-main li1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
 }
