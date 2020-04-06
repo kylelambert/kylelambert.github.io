@@ -80,17 +80,20 @@ body {
 @media (orientation: portrait) {
 
     .container-nav-main name {
+        font-size: 6rem;
         display: flex;
         justify-content: center;
         align-items: center;
     }
 
     .container-nav-inner {
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
     }
 
     .container-nav-inner li a {
+        font-size: 4rem;
+
         display: flex;
         justify-content: center;
         align-items: center;
