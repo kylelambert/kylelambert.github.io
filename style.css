@@ -80,7 +80,7 @@ body {
 @media (orientation: portrait) {
 
     .container-nav-main name {
-        font-size: 6rem;
+        font-size: 10vw;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -92,7 +92,7 @@ body {
     }
 
     .container-nav-inner li a {
-        font-size: 4rem;
+        font-size: 5vw;
 
         display: flex;
         justify-content: center;
