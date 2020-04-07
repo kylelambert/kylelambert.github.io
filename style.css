@@ -61,7 +61,7 @@ body {
     display: grid;
     font-family: 'Oswald', serif;
     font-style: normal;
-    font-size: 2.5rem;
+    font-size: 2.25rem;
     font-kerning: 100;
     letter-spacing: 0.1rem;
     color: white;  
@@ -75,7 +75,7 @@ body {
     font-family: 'Source Sans Pro', sans-serif;
     font-style: normal;
     font-weight: 200;
-    font-size: 1.6rem;
+    font-size: 1.35rem;
     font-kerning: 100;
     color: white;  
     text-shadow: 0 0 black;
@@ -177,6 +177,7 @@ body {
     .container-content-inner p2 {
         padding-left: 2%;
         padding-top: 5%;
+        padding-bottom: 5%;
 
         display: grid;
         font-family: 'Source Sans Pro', sans-serif;
