@@ -1,0 +1,241 @@
+html {
+    height: 100%;
+}
+
+body {
+    background: #333;
+    background-size: cover;
+    padding-top: 3vh;
+    padding-bottom: 50%;
+}
+
+.container-nav-main {
+    display: grid;
+    grid-gap: 5px;
+    list-style-type: none;
+}
+
+.container-nav-inner {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: normal;
+    padding-top: 1.5rem;
+    display: grid;
+    grid-gap: 2%;
+}
+
+.container-nav-main name {
+    font-family: 'Oswald', serif;
+    font-style: normal;
+    font-size: 2.5rem;
+    font-kerning: 100;
+    letter-spacing: 0.3rem;
+    color: white;  
+    text-shadow: 0 0 black;
+}
+
+.container-nav-inner li a {
+    color: rgb(192, 192, 192);
+    text-decoration: none;
+    font-size: 1.25rem;  
+    font-weight: 400;
+    letter-spacing: 0;
+    text-shadow: 0 0 black;
+}
+
+.container-nav-inner li a:hover:not(.active) {
+    color: #ec4b4b;
+}
+
+.container-nav-inner .active {
+    color: #ec4b4b;
+}
+
+.container-content {
+    display: grid;
+    padding-top: 10vh;
+    text-align: right;
+}
+
+.container-content-inner p1 {
+    padding-left: 10%;
+
+    display: grid;
+    font-family: 'Oswald', serif;
+    font-style: normal;
+    font-size: 2.25rem;
+    font-kerning: 100;
+    letter-spacing: 0.1rem;
+    color: white;  
+    text-shadow: 0 0 black;
+}
+
+.container-content-inner p2 {
+    padding-left: 5%;
+    padding-top: 5%;
+    display: grid;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 1.35rem;
+    font-kerning: 100;
+    color: white;  
+    text-shadow: 0 0 black;
+}
+
+.container-content-inner p3 a {
+    padding-left: 50%;
+    padding-top: 2.5%;
+    display: grid;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: normal;
+    color: rgb(192, 192, 192);
+    text-decoration: none;
+    font-size: 1.35rem;  
+    font-weight: 400;
+    letter-spacing: 0;
+    text-shadow: 0 0 black;
+}
+
+.container-content-inner p3 a:hover:not(.active) {
+    color: #ec4b4b;
+}
+
+.container-content-inner .active {
+    color: #ec4b4b;
+}
+
+.img1 {
+    border: 7px solid #ddd;
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (orientation: landscape) {
+
+    body {
+        width: 92%;
+        margin: 0 auto;
+    }
+
+    .container-nav-main {
+        grid-auto-flow: column;
+    }
+
+    .container-nav-inner {
+        grid-auto-flow: column;
+        padding-left: 37.5%;
+    }
+
+    .container-content {
+        grid-auto-flow: row;
+        grid-template-columns: 1.5fr 2fr;
+        grid-template-rows: repeat(2, 1fr);
+        grid-row-gap: 10%;
+    }
+}
+
+@media screen and (orientation: landscape) and (max-width: 900px) {
+
+    body {
+        width: 92%;
+        margin: 0 auto;
+    }
+
+    .container-nav-main {
+        grid-auto-flow: column;
+    }
+
+    .container-nav-inner {
+        grid-auto-flow: column;
+        padding-left: 2%;
+    }
+
+    .container-nav-inner li a {
+        padding-right: 10px;
+    }
+}
+
+@media (orientation: portrait) {
+
+    
+    body {
+        width: 97%;
+        margin: 0 auto;
+        padding-bottom: 0%;
+    }
+
+    .container-nav-main name {
+        font-size: 12.5vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container-nav-inner {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    .container-nav-inner li a {
+        font-size: 7.5vw;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container-content-inner p1 {
+        padding-left: 2%;
+        padding-top: 10%;
+    
+        display: grid;
+        font-family: 'Oswald', serif;
+        font-style: normal;
+        font-size: 7vw;
+        font-kerning: 100;
+        letter-spacing: 0.1rem;
+        color: white;  
+        text-shadow: 0 0 black;
+        text-align: center;
+    }
+    
+    .container-content-inner p2 {
+        padding-left: 2%;
+        padding-top: 5%;
+        padding-bottom: 5%;
+
+        display: grid;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-style: normal;
+        font-weight: 200;
+        font-size: 5vw;
+        font-kerning: 100;
+        color: white;  
+        text-shadow: 0 0 black;
+        text-align: center;
+    }
+
+    .container-content-inner p3 a {
+        padding-left: 2%;
+        padding-top: 0%;
+        padding-bottom: 25%;
+
+        font-family: 'Source Sans Pro', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 5vw;
+        font-kerning: 100;
+        color: rgb(212, 212, 212);
+        text-shadow: 0 0 black;
+        text-align: left;
+
+        font-size: 6.5vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
