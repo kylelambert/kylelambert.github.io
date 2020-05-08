@@ -6,7 +6,6 @@ body {
     background: #333;
     background-size: cover;
     padding-top: 3vh;
-    padding-bottom: 50%;
 }
 
 .container-nav-main {
@@ -52,7 +51,7 @@ body {
 
 .container-content {
     display: grid;
-    padding-top: 10vh;
+    padding-top: 10%;
     text-align: right;
 }
 
@@ -134,8 +133,13 @@ body {
         grid-auto-flow: row;
         grid-template-columns: 1.5fr 2fr;
         grid-template-rows: repeat(2, 1fr);
-        grid-row-gap: 10%;
+        grid-row-gap: 1%;
     }
+
+    .container-content-inner p3 a {
+        padding-bottom: 25%;
+    }
+    
 }
 
 @media screen and (orientation: landscape) and (max-width: 900px) {
@@ -157,11 +161,14 @@ body {
     .container-nav-inner li a {
         padding-right: 10px;
     }
+
+    .container-content-inner p3 a {
+        padding-bottom: 25%;
+    }
 }
 
 @media (orientation: portrait) {
 
-    
     body {
         width: 97%;
         margin: 0 auto;
