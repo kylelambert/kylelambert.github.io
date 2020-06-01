@@ -10,12 +10,10 @@ body {
 
 .slideshow-container {
     position: relative;
-    margin: auto
 }
 
 .mySlides {
     display: none;
-    height: 80vh;
 }
 
 .prev, .next {
@@ -23,12 +21,11 @@ body {
     position: absolute;
     top: 25%;
     width: auto;
-    margin-top: -2.5vw;
     padding: 10px;
     color: #636363;
     font-weight: bold;
     font-size: 3vw;
-    transition: .6s ease;
+    transition: .4s ease;
 }
 
 .next {
@@ -135,8 +132,22 @@ body {
     color: #ec4b4b;
 }
 
+.container-content-inner p4 {
+    padding-left: 5%;
+    padding-top: 5%;
+    padding-bottom: 20%;
+    display: grid;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 1.35rem;
+    font-kerning: 100;
+    color: white;  
+    text-shadow: 0 0 black;
+}
+
 .img1 {
-    border: 7px solid #ddd;
+    border: 6px solid #ddd;
     display: grid;
     margin-left: auto;
     margin-right: auto;
@@ -167,10 +178,6 @@ body {
         grid-template-rows: repeat(2, 1fr);
         grid-row-gap: 0%;
     }
-
-    .container-content-inner p3 a {
-        padding-bottom: 25%;
-    }
     
 }
 
@@ -193,10 +200,6 @@ body {
     .container-nav-inner li a {
         padding-right: 10px;
     }
-
-    .container-content-inner p3 a {
-        padding-bottom: 25%;
-    }
 }
 
 @media (orientation: portrait) {
@@ -209,7 +212,7 @@ body {
 
     .mySlides {
         display: none;
-        height: 5%;
+        padding-bottom: 0%;
     }
 
     .container-nav-main name {
@@ -288,12 +291,28 @@ body {
         position: absolute;
         top: 25%;
         width: auto;
-        margin-top: -2vw;
+        margin-top: 5vw;
         padding: 5px;
-        color: #808080;
+        color: #f2f2f2;
         font-weight: bold;
-        font-size: 20vw;
-        transition: .6s ease;
+        font-size: 10vw;
+        transition: .4s ease;
+    }
+
+    .next {
+        right: 34px;
     }
     
+    .prev {
+        left: 30px;
+    }
+    
+    
+    .img1 {
+        width: 92%;
+    }
+    
+    .container-content-inner p4 {
+        padding-bottom: 0%;
+    }
 }
