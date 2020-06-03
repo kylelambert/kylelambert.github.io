@@ -205,7 +205,7 @@ body {
 @media (orientation: portrait) {
 
     body {
-        width: 97%;
+        width: 100%;
         margin: 0 auto;
         padding-bottom: 0%;
     }
@@ -236,9 +236,9 @@ body {
     }
 
     .container-content-inner p1 {
-        padding-left: 2%;
         padding-top: 10%;
-    
+        padding-right: 15%;
+
         display: grid;
         font-family: 'Oswald', serif;
         font-style: normal;
@@ -251,7 +251,8 @@ body {
     }
     
     .container-content-inner p2 {
-        padding-left: 2%;
+        padding-left: 4%;
+        padding-right: 4%;
         padding-top: 5%;
         padding-bottom: 5%;
 
@@ -263,13 +264,13 @@ body {
         font-kerning: 100;
         color: white;  
         text-shadow: 0 0 black;
-        text-align: center;
+        text-align: left;
     }
 
     .container-content-inner p3 a {
         padding-left: 2%;
         padding-top: 0%;
-        padding-bottom: 25%;
+        padding-bottom: 10%;
 
         font-family: 'Source Sans Pro', sans-serif;
         font-style: normal;
@@ -289,7 +290,7 @@ body {
     .prev, .next {
         cursor: pointer;
         position: absolute;
-        top: 25%;
+        top: 26%;
         width: auto;
         margin-top: 5vw;
         padding: 5px;
@@ -300,16 +301,17 @@ body {
     }
 
     .next {
-        right: 6%;
+        right: 4%;
     }
     
     .prev {
-        left: 5%;
+        left: 3%;
     }
     
     
     .img1 {
-        width: 92%;
+        width: 100%;
+        border: none;
     }
     
     .container-content-inner p4 {
