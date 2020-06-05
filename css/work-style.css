@@ -10,6 +10,7 @@ html {
     --color-text-secondary: rgb(192, 192, 192);
     --color-text-active: #ec4b4b;
     --color-image-border: rgb(230, 230, 230);
+    --color-button-background: rgb(43, 43, 43);
     --text-weight: 200;
 }
 
@@ -21,6 +22,7 @@ html {
     --color-text-secondary: rgb(48, 48, 48);
     --color-text-active: #ec4b4b;
     --color-image-border: rgb(156, 156, 156);
+    --color-button-background: rgb(230, 230, 230);
     --text-weight: 300;
 }
 
@@ -176,6 +178,27 @@ body {
     width: 85%;
     justify-content: center;
     align-items: center;
+}
+
+.button-container {
+    padding-bottom: 2%;
+    float: right;
+}
+
+.button {
+    background-color: var(--color-button-background);
+    border: none;
+    color: var(--color-text-primary);
+    font-family: 'Oswald', serif;
+    font-style: normal;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding-right: 2vw;
+    padding-left: 2vw;
+    padding-top: 1vh;
+    padding-bottom: 1.25vh;
 }
 
 @media (orientation: landscape) {
@@ -336,5 +359,15 @@ body {
     .img1 {
         width: 100%;
         border: none;
+    }
+
+    .button-container {
+        padding-bottom: 0%;
+        float: none;
+    }
+
+    .button {
+        width: 100%;
+        font-size: 3rem;
     }
 }

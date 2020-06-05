@@ -8,18 +8,18 @@
 function toggleTheme() {
     if (localStorage.getItem('theme') === 'theme-light') {
         setTheme('theme-dark');
-        document.getElementById('switch').textContent = "Light Theme";
+        document.getElementById('switch').textContent = "Use Light Theme";
     } else {
         setTheme('theme-light');
-        document.getElementById('switch').textContent = "Dark Theme";
+        document.getElementById('switch').textContent = "Use Dark Theme";
     }
 }
 
 // Immediately invoked function to set the theme on initial load
 (function () {
-    if (localStorage.getItem('theme') === 'theme-dark') {
-        setTheme('theme-dark');
+    if (localStorage.getItem('theme') === 'theme-light') {
+        setTheme('theme-light');
     } else {
-        setTheme('theme-light');       
+        setTheme('theme-dark');
     }
 })();
