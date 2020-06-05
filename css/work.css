@@ -153,6 +153,7 @@ iframe {
 .button {
     background-color: var(--color-button-background);
     border: none;
+    outline: none;
     color: var(--color-text-primary);
     font-family: 'Oswald', serif;
     font-style: normal;
@@ -164,6 +165,16 @@ iframe {
     padding-left: 2vw;
     padding-top: 1vh;
     padding-bottom: 1.25vh;
+}
+
+.noSelect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
 }
 
 @media (orientation: landscape) {
