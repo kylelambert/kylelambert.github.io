@@ -86,7 +86,7 @@ body {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 80%;
+    width: 85%;
 }
 
 @media (orientation: landscape) {
@@ -159,14 +159,20 @@ body {
         align-items: center;
     }
 
+    .container-content {
+        padding-top: 3.5vh;
+    }
+
     .container-content-inner p1 {
-        padding-left: 2%;
-        padding-top: 10%;
+        padding-left: 3%;
+        padding-right: 3%;
+        padding-top: 5%;
+        padding-bottom: 5%;
     
         display: grid;
         font-family: 'Oswald', serif;
         font-style: normal;
-        font-size: 8vw;
+        font-size: 4rem;
         font-kerning: 100;
         letter-spacing: 0.1rem;
         color: white;  
@@ -175,15 +181,16 @@ body {
     }
     
     .container-content-inner p2 {
-        padding-left: 2%;
-        padding-top: 5%;
+        padding-left: 3%;
+        padding-right: 3%;
+        padding-top: 0%;
         padding-bottom: 5%;
 
         display: grid;
         font-family: 'Source Sans Pro', sans-serif;
         font-style: normal;
         font-weight: 200;
-        font-size: 6vw;
+        font-size: 2rem;
         font-kerning: 100;
         color: white;  
         text-shadow: 0 0 black;

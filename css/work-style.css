@@ -245,7 +245,7 @@ body {
         display: grid;
         font-family: 'Oswald', serif;
         font-style: normal;
-        font-size: 7vw;
+        font-size: 3rem;
         font-kerning: 100;
         letter-spacing: 0.1rem;
         color: white;  
@@ -263,7 +263,7 @@ body {
         font-family: 'Source Sans Pro', sans-serif;
         font-style: normal;
         font-weight: 200;
-        font-size: 5vw;
+        font-size: 1.45rem;
         font-kerning: 100;
         color: white;  
         text-shadow: 0 0 black;
@@ -279,13 +279,11 @@ body {
         font-family: 'Source Sans Pro', sans-serif;
         font-style: normal;
         font-weight: 400;
-        font-size: 5vw;
+        font-size: 2rem;
         font-kerning: 100;
         color: rgb(212, 212, 212);
         text-shadow: 0 0 black;
         text-align: left;
-
-        font-size: 6.5vw;
     }
 
         
