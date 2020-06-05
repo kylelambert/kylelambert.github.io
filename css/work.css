@@ -62,7 +62,7 @@ body {
 .container-content {
     margin: auto;
     display: grid;
-    padding-top: 10vh;
+    padding-top: 5vh;
     text-align: left;
 }
 
@@ -139,7 +139,7 @@ iframe {
 
     .container-content {
         grid-auto-flow: column;
-        width: 52%
+        width: 50%
     }
 }
 

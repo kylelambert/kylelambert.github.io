@@ -2,8 +2,30 @@ html {
     height: 100%;
 }
 
+.theme-dark {
+    --color-background: #333;
+    --color-arrows: #636363;
+    --color-arrows-hover: #f2f2f2;
+    --color-text-primary: white;
+    --color-text-secondary: rgb(192, 192, 192);
+    --color-text-active: #ec4b4b;
+    --color-image-border: rgb(230, 230, 230);
+    --text-weight: 200;
+}
+
+.theme-light {
+    --color-background: rgb(255, 255, 255);
+    --color-arrows: #b3b3b3;
+    --color-arrows-hover: #141414;
+    --color-text-primary: black;
+    --color-text-secondary: rgb(48, 48, 48);
+    --color-text-active: #ec4b4b;
+    --color-image-border: rgb(156, 156, 156);
+    --text-weight: 300;
+}
+
 body {
-    background: #333;
+    background: var(--color-background);
     background-size: cover;
     padding-top: 3vh;
 }
@@ -22,7 +44,7 @@ body {
     top: 25%;
     width: auto;
     padding: 10px;
-    color: #636363;
+    color: var(--color-arrows);
     font-weight: bold;
     font-size: 3vw;
     transition: .4s ease;
@@ -37,7 +59,7 @@ body {
 }
 
 .prev:hover, .next:hover {
-    color: #f2f2f2;
+    color: var(--color-arrows-hover);
 }
 
 
@@ -61,12 +83,12 @@ body {
     font-size: 2.5rem;
     font-kerning: 100;
     letter-spacing: 0.3rem;
-    color: white;  
+    color: var(--color-text-primary);  
     text-shadow: 0 0 black;
 }
 
 .container-nav-inner li a {
-    color: rgb(192, 192, 192);
+    color: var(--color-text-secondary);
     text-decoration: none;
     font-size: 1.25rem;  
     font-weight: 400;
@@ -75,11 +97,11 @@ body {
 }
 
 .container-nav-inner li a:hover:not(.active) {
-    color: #ec4b4b;
+    color: var(--color-text-active);
 }
 
 .container-nav-inner .active {
-    color: #ec4b4b;
+    color: var(--color-text-active);
 }
 
 .container-content {
@@ -97,7 +119,7 @@ body {
     font-size: 2.25rem;
     font-kerning: 100;
     letter-spacing: 0.1rem;
-    color: white;  
+    color: var(--color-text-primary);  
     text-shadow: 0 0 black;
 }
 
@@ -107,10 +129,10 @@ body {
     display: grid;
     font-family: 'Source Sans Pro', sans-serif;
     font-style: normal;
-    font-weight: 200;
+    font-weight: var(--text-weight);
     font-size: 1.35rem;
     font-kerning: 100;
-    color: white;  
+    color: var(--color-text-primary);  
     text-shadow: 0 0 black;
 }
 
@@ -120,7 +142,7 @@ body {
     display: grid;
     font-family: 'Source Sans Pro', sans-serif;
     font-style: normal;
-    color: rgb(192, 192, 192);
+    color: var(--color-text-secondary);
     text-decoration: none;
     font-size: 1.35rem;  
     font-weight: 400;
@@ -129,7 +151,7 @@ body {
 }
 
 .container-content-inner p3 a:hover:not(.active), .container-content-inner .active {
-    color: #ec4b4b;
+    color: var(--color-text-active);
 }
 
 .container-content-inner p4 {
@@ -142,12 +164,12 @@ body {
     font-weight: 200;
     font-size: 1.35rem;
     font-kerning: 100;
-    color: white;  
+    color: var(--color-text-primary);  
     text-shadow: 0 0 black;
 }
 
 .img1 {
-    border: 6px solid #ddd;
+    border: 6px solid var(--color-image-border);
     display: grid;
     margin-left: auto;
     margin-right: auto;
@@ -248,8 +270,6 @@ body {
         font-size: 3rem;
         font-kerning: 100;
         letter-spacing: 0.1rem;
-        color: white;  
-        text-shadow: 0 0 black;
         text-align: left;
     }
     
@@ -265,8 +285,6 @@ body {
         font-weight: 200;
         font-size: 1.45rem;
         font-kerning: 100;
-        color: white;  
-        text-shadow: 0 0 black;
         text-align: left;
     }
 
@@ -281,8 +299,6 @@ body {
         font-weight: 400;
         font-size: 2rem;
         font-kerning: 100;
-        color: rgb(212, 212, 212);
-        text-shadow: 0 0 black;
         text-align: left;
     }
 
@@ -298,10 +314,14 @@ body {
         width: auto;
         margin-top: 5vw;
         padding: 5px;
-        color: #f2f2f2;
+        color: white;
         font-weight: bold;
         font-size: 10vw;
         transition: .4s ease;
+    }
+
+    .prev:hover, .next:hover {
+        color: white;
     }
 
     .next {
