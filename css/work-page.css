@@ -131,6 +131,19 @@ body {
     text-shadow: 0 0 black;
 }
 
+.container-content-inner p4 {
+    padding-top: 4%;
+    padding-bottom: 3%;
+    display: grid;
+    font-family: 'Oswald', serif;
+    font-style: normal;
+    font-size: 2.25rem;
+    font-kerning: 100;
+    letter-spacing: 0.1rem;
+    color: var(--color-text-primary);  
+    text-shadow: 0 0 black;
+}
+
 .img1 {
     display: block;
     margin: auto;
@@ -309,6 +322,19 @@ iframe {
     .container-content-inner p3 {
         text-align: left;
         padding-bottom: 7.5%;
+    }
+
+    .container-content-inner p4 {
+        padding-left: 1.5%;
+        padding-top: 4%;
+        padding-bottom: 5%;
+        display: grid;
+        font-family: 'Oswald', serif;
+        font-style: normal;
+        font-size: 3rem;
+        font-kerning: 100;
+        letter-spacing: 0.1rem;
+        text-align: left;
     }
     
     .button-container {
