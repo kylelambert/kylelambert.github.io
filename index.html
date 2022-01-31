@@ -1,50 +1,84 @@
 <!DOCTYPE html>
-<html lang="en" class="theme-dark">
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="description" content="Kyle's Wordle" />
+		<link rel="icon" href="./favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta http-equiv="content-security-policy" content="">
+	<link rel="stylesheet" href="/_app/assets/pages/__layout.svelte-cac10a5e.css">
+	<link rel="modulepreload" href="/_app/start-95e5b2c9.js">
+	<link rel="modulepreload" href="/_app/chunks/vendor-87b639d8.js">
+	<link rel="modulepreload" href="/_app/pages/__layout.svelte-26f8226d.js">
+	<link rel="modulepreload" href="/_app/pages/index.svelte-011e7930.js"><script type="module">
+		import { start } from "/_app/start-95e5b2c9.js";
+		start({
+			target: document.querySelector("#svelte"),
+			paths: {"base":"","assets":""},
+			session: {},
+			route: true,
+			spa: false,
+			trailing_slash: "never",
+			hydrate: {
+				status: 200,
+				error: null,
+				nodes: [
+					import("/_app/pages/__layout.svelte-26f8226d.js"),
+						import("/_app/pages/index.svelte-011e7930.js")
+				],
+				url: new URL("http://sveltekit-prerender/"),
+				params: {}
+			}
+		});
+	</script>
+	</head>
+	<body>
+		<div id="svelte">
 
-<head>
-    <title>Kyle Lambert</title>
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600|Oswald:200,300,400,500" rel="stylesheet">
-    <link rel="stylesheet" href="css/index-style.css">
-    <script src="javascript/themes.js"></script>
-</head>
 
-<body>
+<section id="game-section"><div class="header"><h1>Wordle</h1></div>
 
-    <div class="container-nav-main">
-        <name><a>KYLE LAMBERT</a></name>
-        <section class="container-nav-inner">
-            <li><a class="active noSelect" href="index.html">Home</a></li>
-            <li><a class="noSelect" href="work.html">Work</a></li>
-            <li><a class="noSelect" href="art.html">Artwork</a></li>
-            <li><a class="noSelect" href="https://github.com/kylelambert">GitHub</a></li>
-        </section>
-    </div>
+    <div id="game-board"><div class="row"><div class="tile" data-index="0"></div><div class="tile" data-index="1"></div><div class="tile" data-index="2"></div><div class="tile" data-index="3"></div><div class="tile" data-index="4"></div>
+            </div><div class="row"><div class="tile" data-index="0"></div><div class="tile" data-index="1"></div><div class="tile" data-index="2"></div><div class="tile" data-index="3"></div><div class="tile" data-index="4"></div>
+            </div><div class="row"><div class="tile" data-index="0"></div><div class="tile" data-index="1"></div><div class="tile" data-index="2"></div><div class="tile" data-index="3"></div><div class="tile" data-index="4"></div>
+            </div><div class="row"><div class="tile" data-index="0"></div><div class="tile" data-index="1"></div><div class="tile" data-index="2"></div><div class="tile" data-index="3"></div><div class="tile" data-index="4"></div>
+            </div><div class="row"><div class="tile" data-index="0"></div><div class="tile" data-index="1"></div><div class="tile" data-index="2"></div><div class="tile" data-index="3"></div><div class="tile" data-index="4"></div>
+            </div><div class="row"><div class="tile" data-index="0"></div><div class="tile" data-index="1"></div><div class="tile" data-index="2"></div><div class="tile" data-index="3"></div><div class="tile" data-index="4"></div>
+            </div></div>
 
-    <div class="container-content">
+    <div id="keyboard"><div class="row top"><button data-key="delete"><span class="front">delete</span></button>
+            <button data-key="fill"><span class="front">fill</span></button></div>
+        <div class="row"><button data-key="q"><span class="front">q</span></button>
+            <button data-key="w"><span class="front">w</span></button>
+            <button data-key="e"><span class="front">e</span></button>
+            <button data-key="r"><span class="front">r</span></button>
+            <button data-key="t"><span class="front">t</span></button>
+            <button data-key="y"><span class="front">y</span></button>
+            <button data-key="u"><span class="front">u</span></button>
+            <button data-key="i"><span class="front">i</span></button>
+            <button data-key="o"><span class="front">o</span></button>
+            <button data-key="p"><span class="front">p</span></button></div>
+        <div class="row"><div class="spacer half"></div>
+            <button data-key="a"><span class="front">a</span></button>
+            <button data-key="s"><span class="front">s</span></button>
+            <button data-key="d"><span class="front">d</span></button>
+            <button data-key="f"><span class="front">f</span></button>
+            <button data-key="g"><span class="front">g</span></button>
+            <button data-key="h"><span class="front">h</span></button>
+            <button data-key="j"><span class="front">j</span></button>
+            <button data-key="k"><span class="front">k</span></button>
+            <button data-key="l"><span class="front">l</span></button>
+            <div class="spacer half"></div></div>
+        <div class="row"><button data-key="enter" class="one-and-a-half"><span class="front">enter</span></button>
+            <button data-key="z"><span class="front">z</span></button>
+            <button data-key="x"><span class="front">x</span></button>
+            <button data-key="c"><span class="front">c</span></button>
+            <button data-key="v"><span class="front">v</span></button>
+            <button data-key="b"><span class="front">b</span></button>
+            <button data-key="n"><span class="front">n</span></button>
+            <button data-key="m"><span class="front">m</span></button>
+            <button data-key="backspace" class="one-and-a-half"><span class="front">bksp</span></button></div></div></section>
 
-        <img class="img1" src="images/self.jpg" alt="Picture of Me">
-
-        <section class="container-content-inner">
-            <p1>I'm a software developer or whatever from Columbus, Ohio.</p1>
-            <p2>Welcome to my website. Something something fill in more.
-            </p2>
-            <p2>Something something. Studying computer science & engineering, I earned my bachelor's degree from 
-                The Ohio State University. In Autumn 2019 I graduated with honors with a specialization in computer graphics and
-                game design. However, over the course of my college career, I studied a wide range of 
-                topics relating to software engineering and development.
-            </p2>
-            <p2>Currently, I work at Magnanni developing and designing business-facing data analysis tools using both SQL
-                and Qlik Sense. I work with databases to provide automated and intuitive information regarding product 
-                sales and business partners.
-            </p2>
-        </section>
-
-    </div>
-
-    <div class="button-container noSelect">
-        <button id="switch" onclick="toggleTheme()" class="button noSelect">Change Theme</button>
-    </div>
-
-</body>
-
+</div>
+	</body>
 </html>
