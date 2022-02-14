@@ -1,48 +1,158 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "start-be28ccf9.js",
+    "file": "start-e0c55fb4.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
-      "_vendor-87b639d8.js"
+      "_vendor-15834c12.js"
     ],
     "dynamicImports": [
       "src/routes/__layout.svelte",
       ".svelte-kit/runtime/components/error.svelte",
-      "src/routes/index.svelte"
+      "src/routes/index.svelte",
+      "src/routes/wordle/index.svelte",
+      "src/routes/wordle/create-group.svelte",
+      "src/routes/wordle/create-user.svelte",
+      "src/routes/wordle/join-group.svelte",
+      "src/routes/wordle/login.svelte",
+      "src/routes/wordle/[group]/leaderboard.svelte",
+      "src/routes/wordle/[username]/profile.svelte"
     ]
   },
   "src/routes/__layout.svelte": {
-    "file": "pages/__layout.svelte-0900d0c0.js",
+    "file": "pages/__layout.svelte-f2dc5bfa.js",
     "src": "src/routes/__layout.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-87b639d8.js"
+      "_vendor-15834c12.js"
     ],
     "css": [
-      "assets/pages/__layout.svelte-b08f06c0.css"
+      "assets/pages/__layout.svelte-1f52d9d2.css"
     ]
   },
   ".svelte-kit/runtime/components/error.svelte": {
-    "file": "error.svelte-6d117ed8.js",
+    "file": "error.svelte-56fb8a54.js",
     "src": ".svelte-kit/runtime/components/error.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-87b639d8.js"
+      "_vendor-15834c12.js"
     ]
   },
   "src/routes/index.svelte": {
-    "file": "pages/index.svelte-af3a23f5.js",
+    "file": "pages/index.svelte-bf28c41f.js",
     "src": "src/routes/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-87b639d8.js"
+      "_vendor-15834c12.js"
+    ],
+    "css": [
+      "assets/pages/index.svelte-247aef29.css"
     ]
   },
-  "_vendor-87b639d8.js": {
-    "file": "chunks/vendor-87b639d8.js"
+  "src/routes/wordle/index.svelte": {
+    "file": "pages/wordle/index.svelte-ef6b77a7.js",
+    "src": "src/routes/wordle/index.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-15834c12.js",
+      "_wordleNav-f5b7aec8.js"
+    ],
+    "css": [
+      "assets/pages/wordle/index.svelte-a530faca.css"
+    ]
+  },
+  "src/routes/wordle/create-group.svelte": {
+    "file": "pages/wordle/create-group.svelte-13e78e4b.js",
+    "src": "src/routes/wordle/create-group.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-15834c12.js",
+      "_wordleNav-f5b7aec8.js"
+    ],
+    "css": [
+      "assets/pages/wordle/create-group.svelte-521b61a3.css"
+    ]
+  },
+  "src/routes/wordle/create-user.svelte": {
+    "file": "pages/wordle/create-user.svelte-74304724.js",
+    "src": "src/routes/wordle/create-user.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-15834c12.js",
+      "_wordleNav-f5b7aec8.js"
+    ],
+    "css": [
+      "assets/pages/wordle/create-user.svelte-4977375f.css"
+    ]
+  },
+  "src/routes/wordle/join-group.svelte": {
+    "file": "pages/wordle/join-group.svelte-0c0e4d27.js",
+    "src": "src/routes/wordle/join-group.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-15834c12.js",
+      "_wordleNav-f5b7aec8.js"
+    ],
+    "css": [
+      "assets/pages/wordle/create-group.svelte-521b61a3.css"
+    ]
+  },
+  "src/routes/wordle/login.svelte": {
+    "file": "pages/wordle/login.svelte-f9af26a2.js",
+    "src": "src/routes/wordle/login.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-15834c12.js",
+      "_wordleNav-f5b7aec8.js"
+    ],
+    "css": [
+      "assets/pages/wordle/create-group.svelte-521b61a3.css"
+    ]
+  },
+  "src/routes/wordle/[group]/leaderboard.svelte": {
+    "file": "pages/wordle/_group_/leaderboard.svelte-25484948.js",
+    "src": "src/routes/wordle/[group]/leaderboard.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-15834c12.js",
+      "_wordleNav-f5b7aec8.js"
+    ],
+    "css": [
+      "assets/pages/wordle/_group_/leaderboard.svelte-3101f311.css"
+    ]
+  },
+  "src/routes/wordle/[username]/profile.svelte": {
+    "file": "pages/wordle/_username_/profile.svelte-c10f2b2b.js",
+    "src": "src/routes/wordle/[username]/profile.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-15834c12.js",
+      "_wordleNav-f5b7aec8.js"
+    ],
+    "css": [
+      "assets/pages/wordle/_username_/profile.svelte-65aa1584.css"
+    ]
+  },
+  "_vendor-15834c12.js": {
+    "file": "chunks/vendor-15834c12.js"
+  },
+  "_wordleNav-f5b7aec8.js": {
+    "file": "chunks/wordleNav-f5b7aec8.js",
+    "imports": [
+      "_vendor-15834c12.js"
+    ],
+    "css": [
+      "assets/wordleNav-931ebc7b.css"
+    ]
   }
 }

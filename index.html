@@ -2,16 +2,17 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<meta name="description" content="Kyle's Wordle" />
+		<meta name="description" content="Kyle Lambert" />
 		<link rel="icon" href="./favicon.png" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<meta http-equiv="content-security-policy" content="">
-	<link rel="stylesheet" href="/_app/assets/pages/__layout.svelte-b08f06c0.css">
-	<link rel="modulepreload" href="/_app/start-be28ccf9.js">
-	<link rel="modulepreload" href="/_app/chunks/vendor-87b639d8.js">
-	<link rel="modulepreload" href="/_app/pages/__layout.svelte-0900d0c0.js">
-	<link rel="modulepreload" href="/_app/pages/index.svelte-af3a23f5.js"><script type="module">
-		import { start } from "/_app/start-be28ccf9.js";
+		<meta http-equiv="content-security-policy" content=""><title>Kyle Lambert</title>
+	<link rel="stylesheet" href="/_app/assets/pages/__layout.svelte-1f52d9d2.css">
+	<link rel="stylesheet" href="/_app/assets/pages/index.svelte-247aef29.css">
+	<link rel="modulepreload" href="/_app/start-e0c55fb4.js">
+	<link rel="modulepreload" href="/_app/chunks/vendor-15834c12.js">
+	<link rel="modulepreload" href="/_app/pages/__layout.svelte-f2dc5bfa.js">
+	<link rel="modulepreload" href="/_app/pages/index.svelte-bf28c41f.js"><script type="module">
+		import { start } from "/_app/start-e0c55fb4.js";
 		start({
 			target: document.querySelector("#svelte"),
 			paths: {"base":"","assets":""},
@@ -23,8 +24,8 @@
 				status: 200,
 				error: null,
 				nodes: [
-					import("/_app/pages/__layout.svelte-0900d0c0.js"),
-						import("/_app/pages/index.svelte-af3a23f5.js")
+					import("/_app/pages/__layout.svelte-f2dc5bfa.js"),
+						import("/_app/pages/index.svelte-bf28c41f.js")
 				],
 				url: new URL("http://sveltekit-prerender/"),
 				params: {}
@@ -36,49 +37,13 @@
 		<div id="svelte">
 
 
-<div class="game-wrapper"><section id="game-section"><div class="header"><h1>???</h1></div>
 
-        <div id="game-board"><div class="row"><div class="tile" data-index="0"></div><div class="tile" data-index="1"></div><div class="tile" data-index="2"></div><div class="tile" data-index="3"></div><div class="tile" data-index="4"></div>
-                </div><div class="row"><div class="tile" data-index="0"></div><div class="tile" data-index="1"></div><div class="tile" data-index="2"></div><div class="tile" data-index="3"></div><div class="tile" data-index="4"></div>
-                </div><div class="row"><div class="tile" data-index="0"></div><div class="tile" data-index="1"></div><div class="tile" data-index="2"></div><div class="tile" data-index="3"></div><div class="tile" data-index="4"></div>
-                </div><div class="row"><div class="tile" data-index="0"></div><div class="tile" data-index="1"></div><div class="tile" data-index="2"></div><div class="tile" data-index="3"></div><div class="tile" data-index="4"></div>
-                </div><div class="row"><div class="tile" data-index="0"></div><div class="tile" data-index="1"></div><div class="tile" data-index="2"></div><div class="tile" data-index="3"></div><div class="tile" data-index="4"></div>
-                </div><div class="row"><div class="tile" data-index="0"></div><div class="tile" data-index="1"></div><div class="tile" data-index="2"></div><div class="tile" data-index="3"></div><div class="tile" data-index="4"></div>
-                </div></div>
 
-        <div id="keyboard"><div class="row top"><button data-key="delete"><span class="front">delete all</span></button>
-                <button data-key="shuffle"><span class="front">shuffle</span></button>
-                <button data-key="fill"><span class="front">fill known</span></button></div>
-            <div class="row letters" data-letters="10" data-before="null"><button data-key="q" class="letter"><span class="front">q</span></button>
-                <button data-key="w" class="letter"><span class="front">w</span></button>
-                <button data-key="e" class="letter"><span class="front">e</span></button>
-                <button data-key="r" class="letter"><span class="front">r</span></button>
-                <button data-key="t" class="letter"><span class="front">t</span></button>
-                <button data-key="y" class="letter"><span class="front">y</span></button>
-                <button data-key="u" class="letter"><span class="front">u</span></button>
-                <button data-key="i" class="letter"><span class="front">i</span></button>
-                <button data-key="o" class="letter"><span class="front">o</span></button>
-                <button data-key="p" class="letter"><span class="front">p</span></button></div>
-            <div class="row letters" data-letters="9" data-before=".spacer.half.last"><div class="spacer half"></div>
-                <button data-key="a" class="letter"><span class="front">a</span></button>
-                <button data-key="s" class="letter"><span class="front">s</span></button>
-                <button data-key="d" class="letter"><span class="front">d</span></button>
-                <button data-key="f" class="letter"><span class="front">f</span></button>
-                <button data-key="g" class="letter"><span class="front">g</span></button>
-                <button data-key="h" class="letter"><span class="front">h</span></button>
-                <button data-key="j" class="letter"><span class="front">j</span></button>
-                <button data-key="k" class="letter"><span class="front">k</span></button>
-                <button data-key="l" class="letter"><span class="front">l</span></button>
-                <div class="spacer half last"></div></div>
-            <div class="row letters" data-letters="7" data-before="button[data-key='backspace']"><button data-key="enter" class="one-and-a-half"><span class="front">enter</span></button>
-                <button data-key="z" class="letter"><span class="front">z</span></button>
-                <button data-key="x" class="letter"><span class="front">x</span></button>
-                <button data-key="c" class="letter"><span class="front">c</span></button>
-                <button data-key="v" class="letter"><span class="front">v</span></button>
-                <button data-key="b" class="letter"><span class="front">b</span></button>
-                <button data-key="n" class="letter"><span class="front">n</span></button>
-                <button data-key="m" class="letter"><span class="front">m</span></button>
-                <button data-key="backspace" class="one-and-a-half"><span class="front">bksp</span></button></div></div></section></div>
+<div class="home svelte-1b0junk"><p>Placeholder home page</p>
+    <p>This will be a cool site eventually.</p>
+    <p>Go play Wordle VS.</p>
+    <a href="/wordle">Play Wordle VS</a>
+</div>
 
 </div>
 	</body>

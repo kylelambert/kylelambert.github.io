@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="description" content="Kyle Lambert" />
+		<link rel="icon" href="../favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta http-equiv="content-security-policy" content=""><title>Login | Wordle VS</title>
+	<link rel="stylesheet" href="/_app/assets/pages/__layout.svelte-1f52d9d2.css">
+	<link rel="stylesheet" href="/_app/assets/pages/wordle/create-group.svelte-521b61a3.css">
+	<link rel="stylesheet" href="/_app/assets/wordleNav-931ebc7b.css">
+	<link rel="modulepreload" href="/_app/start-e0c55fb4.js">
+	<link rel="modulepreload" href="/_app/chunks/vendor-15834c12.js">
+	<link rel="modulepreload" href="/_app/pages/__layout.svelte-f2dc5bfa.js">
+	<link rel="modulepreload" href="/_app/pages/wordle/login.svelte-f9af26a2.js">
+	<link rel="modulepreload" href="/_app/chunks/wordleNav-f5b7aec8.js"><script type="module">
+		import { start } from "/_app/start-e0c55fb4.js";
+		start({
+			target: document.querySelector("#svelte"),
+			paths: {"base":"","assets":""},
+			session: {},
+			route: true,
+			spa: false,
+			trailing_slash: "never",
+			hydrate: {
+				status: 200,
+				error: null,
+				nodes: [
+					import("/_app/pages/__layout.svelte-f2dc5bfa.js"),
+						import("/_app/pages/wordle/login.svelte-f9af26a2.js")
+				],
+				url: new URL("http://sveltekit-prerender/wordle/login"),
+				params: {}
+			}
+		});
+	</script>
+	</head>
+	<body>
+		<div id="svelte">
+
+
+
+
+<div class="wordle-wrapper"><section class="wordle-section"><div class="header svelte-1fb97jb"><div class="inner svelte-1fb97jb"><a href="/wordle/login" class="user svelte-1fb97jb"><svg width="752pt" height="752pt" version="1.1" viewBox="0 0 752 752" xmlns="http://www.w3.org/2000/svg" class="svelte-1fb97jb"><defs><clipPath id="b"><path d="m257 139.21h238v236.79h-238z"></path></clipPath><clipPath id="a"><path d="m139.21 395h473.58v217.79h-473.58z"></path></clipPath></defs><g><g clip-path="url(#b)"><path d="m376 139.21c-65.387 0-118.39 53.008-118.39 118.39s53.008 118.39 118.39 118.39c65.391 0 118.4-53.008 118.4-118.39s-53.008-118.39-118.4-118.39z" fill="#fff"></path></g><g clip-path="url(#a)"><path d="m237.88 395.73c-54.492 0-98.664 44.172-98.664 98.664v98.66c0 10.898 8.8359 19.734 19.734 19.734h434.11c10.898 0 19.734-8.8359 19.734-19.734v-98.66c0-54.492-44.176-98.664-98.664-98.664z" fill="#fff"></path></g></g></svg></a>
+        <a href="/wordle" class="logo svelte-1fb97jb"><h1 style="margin-top: 4px; margin-right: -1px;" class="svelte-1fb97jb">W</h1>
+            <h1 style="margin-top: -4px;" class="svelte-1fb97jb">O</h1>
+            <h1 style="margin-top: -10px;" class="svelte-1fb97jb">R</h1>
+            <h1 style="margin-top: -10px;" class="svelte-1fb97jb">D</h1>
+            <h1 style="margin-top: -4px;" class="svelte-1fb97jb">L</h1>
+            <h1 style="margin-top: 4px; margin-left: -1px;" class="svelte-1fb97jb">E</h1>
+            <div class="vs-wrapper svelte-1fb97jb"><h1 class="vs  svelte-1fb97jb">V</h1>
+                <h1 class="vs  svelte-1fb97jb">S</h1></div></a></div>
+</div>
+
+        <h1 class="svelte-1nhk1vy">Login</h1>
+
+        <div class="form"><div class="input-wrapper"><input id="username" name="username" placeholder=" " required value="">
+                    <label for="username">Username</label></div>
+
+                <div class="input-wrapper"><input id="password" name="password" type="password" placeholder=" " required value="">
+                    <label for="password">Password</label></div>
+
+                <button class="button-link"><span class="front">Login! 😎</span></button>
+
+                <p class="error"></p></div>
+
+            <div class="separator"><a href="/wordle/create-user" class="button-link"><span class="front">Create A New Account</span></a></div></section>
+</div>
+
+</div>
+	</body>
+</html>
